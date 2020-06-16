@@ -32,7 +32,11 @@ namespace WpfTest.UserControlBinding
         public BindingControl()
         {
             InitializeComponent();
-            this.DataContext = new BindingControlViewModel();
+            //solution
+            MyGrid.DataContext = new BindingControlViewModel();
+
+            //old data context
+            //this.DataContext = new BindingControlViewModel();
         }
     }
 
