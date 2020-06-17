@@ -29,12 +29,5 @@ namespace WpfTest.ListViewBinding
 			get { return isConfigured; }
 			set { SetProperty(ref isConfigured, value); }
 		}
-
-		//private bool isSelected;
-		//public bool IsSelected
-		//{
-		//	get { return isSelected; }
-		//	set { SetProperty(ref isSelected, value); }
-		//}
 	}
 }
