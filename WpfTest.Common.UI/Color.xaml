@@ -1,0 +1,45 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:WpfTest.Common.UI">
+    
+    <Color x:Key="Accent1Color">#f1af2a</Color>
+    <Color x:Key="Dominant1Color">#1b3066</Color>
+    <Color x:Key="Dominant2Color">#f9f9f9</Color>
+    <Color x:Key="Background1Color">#ffffff</Color>
+
+    <SolidColorBrush x:Key="Accent1ColorBrush" Color="{StaticResource Accent1Color}" />
+    <SolidColorBrush x:Key="Dominant1ColorBrush" Color="{StaticResource Dominant1Color}" />
+    <SolidColorBrush x:Key="Dominant2ColorBrush" Color="{StaticResource Dominant2Color}" />
+    <SolidColorBrush x:Key="Background1ColorBrush" Color="{StaticResource Background1Color}" />
+
+    <!--Selection colors-->
+    <Color x:Key="RAL_9010_SelectionColor">#ffffff</Color>
+    <Color x:Key="RAL_9002_SelectionColor">#e7ebda</Color>
+    <Color x:Key="RAL_7035_SelectionColor">#d7d7d7</Color>
+    <Color x:Key="RAL_9006_SelectionColor">#a5a5a5</Color>
+    <Color x:Key="RAL_9007_SelectionColor">#8f8f8f</Color>
+    <Color x:Key="RAL_7040_SelectionColor">#9da1aa</Color>
+
+    <Color x:Key="RAL_7024_SelectionColor">#474a51</Color>
+    <Color x:Key="RAL_1015_SelectionColor">#e6d690</Color>
+    <Color x:Key="RAL_5010_SelectionColor">#0e294b</Color>
+    <Color x:Key="RAL_8017_SelectionColor">#45322e</Color>
+    <Color x:Key="RAL_1021_SelectionColor">#f3da0b</Color>
+    <Color x:Key="RAL_3011_SelectionColor">#781f19</Color>
+    <Color x:Key="RAL_6020_SelectionColor">#2e3a23</Color>
+
+    <SolidColorBrush x:Key="RAL_9010_SelectionColorBrush" Color="{StaticResource RAL_9010_SelectionColor}" />
+    <SolidColorBrush x:Key="RAL_9002_SelectionColorBrush" Color="{StaticResource RAL_9002_SelectionColor}" />
+    <SolidColorBrush x:Key="RAL_7035_SelectionColorBrush" Color="{StaticResource RAL_7035_SelectionColor}" />
+    <SolidColorBrush x:Key="RAL_9006_SelectionColorBrush" Color="{StaticResource RAL_9006_SelectionColor}" />
+    <SolidColorBrush x:Key="RAL_9007_SelectionColorBrush" Color="{StaticResource RAL_9007_SelectionColor}" />
+    <SolidColorBrush x:Key="RAL_7040_SelectionColorBrush" Color="{StaticResource RAL_7040_SelectionColor}" />
+
+    <SolidColorBrush x:Key="RAL_7024_SelectionColorBrush" Color="{StaticResource RAL_7024_SelectionColor}" />
+    <SolidColorBrush x:Key="RAL_1015_SelectionColorBrush" Color="{StaticResource RAL_1015_SelectionColor}" />
+    <SolidColorBrush x:Key="RAL_5010_SelectionColorBrush" Color="{StaticResource RAL_5010_SelectionColor}" />
+    <SolidColorBrush x:Key="RAL_8017_SelectionColorBrush" Color="{StaticResource RAL_8017_SelectionColor}" />
+    <SolidColorBrush x:Key="RAL_1021_SelectionColorBrush" Color="{StaticResource RAL_1021_SelectionColor}" />
+    <SolidColorBrush x:Key="RAL_3011_SelectionColorBrush" Color="{StaticResource RAL_3011_SelectionColor}" />
+    <SolidColorBrush x:Key="RAL_6020_SelectionColorBrush" Color="{StaticResource RAL_6020_SelectionColor}" />
+</ResourceDictionary>

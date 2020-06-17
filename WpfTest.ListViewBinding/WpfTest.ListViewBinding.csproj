@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{9B665804-81DF-4731-8D12-054DD556F486}</ProjectGuid>
+    <ProjectGuid>{BF999B31-6147-4B21-AC7E-5AD5CCBD9EE0}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>WpfTest.UserControlBinding</RootNamespace>
-    <AssemblyName>WpfTest.UserControlBinding</AssemblyName>
+    <RootNamespace>WpfTest.ListViewBinding</RootNamespace>
+    <AssemblyName>WpfTest.ListViewBinding</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -55,10 +55,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="BindingControl.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
+    <Compile Include="SelectionList.xaml.cs">
+      <DependentUpon>SelectionList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SelectionListItem.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -67,13 +67,14 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="BindingControl.xaml.cs">
-      <DependentUpon>BindingControl.xaml</DependentUpon>
-    </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="SelectionList.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -102,6 +103,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\WpfTest.Common.UI\WpfTest.Common.UI.csproj">
+      <Project>{98306961-d26d-47f6-8568-0b280fdb0ef2}</Project>
+      <Name>WpfTest.Common.UI</Name>
+    </ProjectReference>
     <ProjectReference Include="..\WpfTest.Common\WpfTest.Common.csproj">
       <Project>{ae78ad56-2c9a-4310-b2c8-837cb8ffae3b}</Project>
       <Name>WpfTest.Common</Name>

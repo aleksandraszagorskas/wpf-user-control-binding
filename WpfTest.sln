@@ -5,6 +5,12 @@ VisualStudioVersion = 16.0.30104.148
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfTest.UserControlBinding", "WpfTest.UserControlBinding\WpfTest.UserControlBinding.csproj", "{9B665804-81DF-4731-8D12-054DD556F486}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfTest.ListViewBinding", "WpfTest.ListViewBinding\WpfTest.ListViewBinding.csproj", "{BF999B31-6147-4B21-AC7E-5AD5CCBD9EE0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfTest.Common", "WpfTest.Common\WpfTest.Common.csproj", "{AE78AD56-2C9A-4310-B2C8-837CB8FFAE3B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfTest.Common.UI", "WpfTest.Common.UI\WpfTest.Common.UI.csproj", "{98306961-D26D-47F6-8568-0B280FDB0EF2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +21,18 @@ Global
 		{9B665804-81DF-4731-8D12-054DD556F486}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9B665804-81DF-4731-8D12-054DD556F486}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9B665804-81DF-4731-8D12-054DD556F486}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF999B31-6147-4B21-AC7E-5AD5CCBD9EE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF999B31-6147-4B21-AC7E-5AD5CCBD9EE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF999B31-6147-4B21-AC7E-5AD5CCBD9EE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF999B31-6147-4B21-AC7E-5AD5CCBD9EE0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE78AD56-2C9A-4310-B2C8-837CB8FFAE3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE78AD56-2C9A-4310-B2C8-837CB8FFAE3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE78AD56-2C9A-4310-B2C8-837CB8FFAE3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE78AD56-2C9A-4310-B2C8-837CB8FFAE3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98306961-D26D-47F6-8568-0B280FDB0EF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98306961-D26D-47F6-8568-0B280FDB0EF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98306961-D26D-47F6-8568-0B280FDB0EF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98306961-D26D-47F6-8568-0B280FDB0EF2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
