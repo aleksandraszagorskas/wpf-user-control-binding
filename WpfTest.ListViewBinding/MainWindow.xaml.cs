@@ -124,9 +124,9 @@ namespace WpfTest.ListViewBinding
 
         private void OnGetValueButtonClick(object obj)
         {
-            var text = SelectedItem.ValueObj.ToString();
+            string text = SelectedItem != null? SelectedItem.ValueObj.ToString() : "null";
             ValueText = text;
-            var text2 = SelectedItem2.ValueObj.ToString();
+            string text2 = SelectedItem2 != null? SelectedItem2.ValueObj.ToString() : "null";
             ValueText2 = text2;
         }
 
