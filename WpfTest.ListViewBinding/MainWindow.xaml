@@ -11,18 +11,17 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="7*"/>
-            <RowDefinition Height="1*"/>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="4*"/>
             <RowDefinition Height="1*"/>
             <RowDefinition Height="1*"/>
         </Grid.RowDefinitions>
 
-        <local:SelectionList
-            Grid.Row="0"
-            Items="{Binding SelectableItems}"
-            SelectedItem="{Binding SelectedItem}"/>
-
-        <StackPanel Grid.Row="1">
+        <StackPanel Grid.Row="0">
+            <local:SelectionList
+                x:Name="List1"
+                Items="{Binding SelectableItems}"
+                SelectedItem="{Binding SelectedItem}"/>
             <TextBlock >
                 <Run Text="Selected Item: "/>
                 <Run Text="{Binding SelectedItem.Text, FallbackValue=SelectedItem}"/>
@@ -33,21 +32,37 @@
             </TextBlock>
         </StackPanel>
 
+
+        <StackPanel Grid.Row="1">
+            <local:SelectionList
+                x:Name="List2"
+                Items="{Binding SelectableItems2}"
+                SelectedItem="{Binding SelectedItem2}"/>
+            <TextBlock >
+                <Run Text="Selected Item: "/>
+                <Run Text="{Binding SelectedItem2.Text, FallbackValue=SelectedItem}"/>
+            </TextBlock>
+            <TextBlock>
+                <Run Text="Configured Item: "/>
+                <Run Text="{Binding ConfiguredItem2.Text, FallbackValue=ConfiguredItem}"/>
+            </TextBlock>
+        </StackPanel>
+
         <Grid Grid.Row="2">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-            
+
             <Button 
                 x:Name="GenerateListButton"
                 Grid.Column="0"
-                Content="Generate List"
+                Content="Generate Lists"
                 Command="{Binding GenerateListButtonClick}"/>
             <Button 
                 x:Name="ConfigureItemButton"
                 Grid.Column="1"
-                Content="Configure Item"
+                Content="Configure Items"
                 Command="{Binding ConfigureItemButtonClick}"/>
         </Grid>
 
@@ -60,11 +75,15 @@
             <Button 
                 x:Name="GetValueButton" 
                 Grid.Column="0"
-                Content="Get Selected Value"
+                Content="Get Selected Values"
                 Command="{Binding GetValueButtonClick}"/>
-            <TextBlock 
-                Grid.Column="1"
-                Text="{Binding ValueText}"/>
+            <StackPanel Grid.Column="1">
+                <TextBlock 
+                    Text="{Binding ValueText}"/>
+                <TextBlock 
+                    Text="{Binding ValueText2}"/>
+            </StackPanel>
+                
         </Grid>
 
     </Grid>
